@@ -1,2 +1,2 @@
-_G.Loader_Key = "ADffdRRdtYoRpBL"
+_G.Loader_Key = "GM22400451807Zh"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ModProgrammMiked/protectedscripts/main/get-script-with-key.lua"))()
