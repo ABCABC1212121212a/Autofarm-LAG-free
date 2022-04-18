@@ -1,1 +1,1 @@
-# PSX-OP-script-2022
+# Easter egg finder 2022
