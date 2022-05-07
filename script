@@ -18,6 +18,9 @@ else
 end
 if lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], LocalNumber) then
     lib.Message.New("Starting auto farm Please select area");
+     lib.Message.New("UNKNOWN ERROR 12, please rejoin game.");
+      lib.Message.New("UNKNOWN ERROR 12, please rejoin game.");
+       lib.Message.New("UNKNOWN ERROR 12, please rejoin game.");
 else
     lib.Message.New("UNKNOWN ERROR 12, please rejoin game.");
 end;  
