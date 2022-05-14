@@ -49,5 +49,5 @@ _30Minutes.TextColor3 = Color3.fromRGB(0, 0, 0)
 _30Minutes.TextSize = 46.000
 _30Minutes.MouseButton1Down:connect(function()
 
-loadstring(game:HttpGet("https://pastebin.com/raw/X0k9uecf"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ABCABC1212121212a/main12/main/script"))()
 end)
